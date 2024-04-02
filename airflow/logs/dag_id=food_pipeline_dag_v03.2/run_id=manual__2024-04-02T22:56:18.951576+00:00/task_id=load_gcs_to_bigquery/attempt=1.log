@@ -1,0 +1,17 @@
+[2024-04-02T22:56:25.802+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: food_pipeline_dag_v03.2.load_gcs_to_bigquery manual__2024-04-02T22:56:18.951576+00:00 [queued]>
+[2024-04-02T22:56:25.808+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: food_pipeline_dag_v03.2.load_gcs_to_bigquery manual__2024-04-02T22:56:18.951576+00:00 [queued]>
+[2024-04-02T22:56:25.808+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-04-02T22:56:25.818+0000] {taskinstance.py:2217} INFO - Executing <Task(GCSToBigQueryOperator): load_gcs_to_bigquery> on 2024-04-02 22:56:18.951576+00:00
+[2024-04-02T22:56:25.822+0000] {standard_task_runner.py:60} INFO - Started process 2477 to run task
+[2024-04-02T22:56:25.824+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'food_pipeline_dag_v03.2', 'load_gcs_to_bigquery', 'manual__2024-04-02T22:56:18.951576+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/food_dag.py', '--cfg-path', '/tmp/tmpgn2vtzlh']
+[2024-04-02T22:56:25.826+0000] {standard_task_runner.py:88} INFO - Job 33: Subtask load_gcs_to_bigquery
+[2024-04-02T22:56:25.864+0000] {task_command.py:423} INFO - Running <TaskInstance: food_pipeline_dag_v03.2.load_gcs_to_bigquery manual__2024-04-02T22:56:18.951576+00:00 [running]> on host 8a5043ba3213
+[2024-04-02T22:56:25.951+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='kenneth' AIRFLOW_CTX_DAG_ID='food_pipeline_dag_v03.2' AIRFLOW_CTX_TASK_ID='load_gcs_to_bigquery' AIRFLOW_CTX_EXECUTION_DATE='2024-04-02T22:56:18.951576+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-02T22:56:18.951576+00:00'
+[2024-04-02T22:56:25.960+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-04-02T22:56:25.966+0000] {base.py:83} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2024-04-02T22:56:25.973+0000] {gcs_to_bigquery.py:379} INFO - Using existing BigQuery table for storing data...
+[2024-04-02T22:56:26.015+0000] {gcs_to_bigquery.py:383} INFO - Executing: {'load': {'autodetect': True, 'createDisposition': 'CREATE_IF_NEEDED', 'destinationTable': {'projectId': 'oceanic-facet-418014', 'datasetId': 'approved_food_establishments_34421', 'tableId': 'approved_food_establishments'}, 'sourceFormat': 'PARQUET', 'sourceUris': ['gs://approved-food-establishments-bucket/approved-food-establishments-bucket/food_data/data.parquet'], 'writeDisposition': 'WRITE_TRUNCATE', 'ignoreUnknownValues': False}}
+[2024-04-02T22:56:26.018+0000] {bigquery.py:1613} INFO - Inserting job ***_food_pipeline_dag_v03_2_load_gcs_to_bigquery_2024_04_02T22_56_18_951576_00_00_b6b11091334a7f26fdd5f3e765489444
+[2024-04-02T22:56:32.217+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=food_pipeline_dag_v03.2, task_id=load_gcs_to_bigquery, execution_date=20240402T225618, start_date=20240402T225625, end_date=20240402T225632
+[2024-04-02T22:56:32.262+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-02T22:56:32.272+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

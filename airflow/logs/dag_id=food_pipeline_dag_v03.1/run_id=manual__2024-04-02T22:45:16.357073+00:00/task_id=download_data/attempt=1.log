@@ -1,0 +1,61 @@
+[2024-04-02T22:45:17.483+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: food_pipeline_dag_v03.1.download_data manual__2024-04-02T22:45:16.357073+00:00 [queued]>
+[2024-04-02T22:45:17.490+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: food_pipeline_dag_v03.1.download_data manual__2024-04-02T22:45:16.357073+00:00 [queued]>
+[2024-04-02T22:45:17.490+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-04-02T22:45:17.501+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): download_data> on 2024-04-02 22:45:16.357073+00:00
+[2024-04-02T22:45:17.506+0000] {standard_task_runner.py:60} INFO - Started process 2170 to run task
+[2024-04-02T22:45:17.508+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'food_pipeline_dag_v03.1', 'download_data', 'manual__2024-04-02T22:45:16.357073+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/food_dag.py', '--cfg-path', '/tmp/tmpnyzf4i2a']
+[2024-04-02T22:45:17.516+0000] {standard_task_runner.py:88} INFO - Job 25: Subtask download_data
+[2024-04-02T22:45:17.581+0000] {task_command.py:423} INFO - Running <TaskInstance: food_pipeline_dag_v03.1.download_data manual__2024-04-02T22:45:16.357073+00:00 [running]> on host 8a5043ba3213
+[2024-04-02T22:45:17.662+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='kenneth' AIRFLOW_CTX_DAG_ID='food_pipeline_dag_v03.1' AIRFLOW_CTX_TASK_ID='download_data' AIRFLOW_CTX_EXECUTION_DATE='2024-04-02T22:45:16.357073+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-02T22:45:16.357073+00:00'
+[2024-04-02T22:45:17.664+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-02T22:45:17.664+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'mkdir -p /opt/***/data && wget https://fsa-catalogue2.s3.eu-west-2.amazonaws.com/Approved+establishments+01-03-2024.csv -O /opt/***/data/data.csv']
+[2024-04-02T22:45:17.673+0000] {subprocess.py:86} INFO - Output:
+[2024-04-02T22:45:17.677+0000] {subprocess.py:93} INFO - --2024-04-02 22:45:17--  https://fsa-catalogue2.s3.eu-west-2.amazonaws.com/Approved+establishments+01-03-2024.csv
+[2024-04-02T22:45:17.724+0000] {subprocess.py:93} INFO - Resolving fsa-catalogue2.s3.eu-west-2.amazonaws.com (fsa-catalogue2.s3.eu-west-2.amazonaws.com)... 52.95.148.22, 52.95.142.54, 52.95.142.14, ...
+[2024-04-02T22:45:17.733+0000] {subprocess.py:93} INFO - Connecting to fsa-catalogue2.s3.eu-west-2.amazonaws.com (fsa-catalogue2.s3.eu-west-2.amazonaws.com)|52.95.148.22|:443... connected.
+[2024-04-02T22:45:17.810+0000] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-04-02T22:45:17.811+0000] {subprocess.py:93} INFO - Length: 1750355 (1.7M) [text/csv]
+[2024-04-02T22:45:17.812+0000] {subprocess.py:93} INFO - Saving to: ‘/opt/***/data/data.csv’
+[2024-04-02T22:45:17.812+0000] {subprocess.py:93} INFO - 
+[2024-04-02T22:45:17.827+0000] {subprocess.py:93} INFO -      0K .......... .......... .......... .......... ..........  2% 3.06M 1s
+[2024-04-02T22:45:17.838+0000] {subprocess.py:93} INFO -     50K .......... .......... .......... .......... ..........  5% 4.03M 0s
+[2024-04-02T22:45:17.851+0000] {subprocess.py:93} INFO -    100K .......... .......... .......... .......... ..........  8% 3.79M 0s
+[2024-04-02T22:45:17.868+0000] {subprocess.py:93} INFO -    150K .......... .......... .......... .......... .......... 11% 3.00M 0s
+[2024-04-02T22:45:17.896+0000] {subprocess.py:93} INFO -    200K .......... .......... .......... .......... .......... 14% 1.74M 0s
+[2024-04-02T22:45:17.900+0000] {subprocess.py:93} INFO -    250K .......... .......... .......... .......... .......... 17% 10.6M 0s
+[2024-04-02T22:45:17.907+0000] {subprocess.py:93} INFO -    300K .......... .......... .......... .......... .......... 20% 6.83M 0s
+[2024-04-02T22:45:17.917+0000] {subprocess.py:93} INFO -    350K .......... .......... .......... .......... .......... 23% 5.34M 0s
+[2024-04-02T22:45:17.921+0000] {subprocess.py:93} INFO -    400K .......... .......... .......... .......... .......... 26% 10.7M 0s
+[2024-04-02T22:45:17.924+0000] {subprocess.py:93} INFO -    450K .......... .......... .......... .......... .......... 29% 16.6M 0s
+[2024-04-02T22:45:17.932+0000] {subprocess.py:93} INFO -    500K .......... .......... .......... .......... .......... 32% 6.59M 0s
+[2024-04-02T22:45:17.937+0000] {subprocess.py:93} INFO -    550K .......... .......... .......... .......... .......... 35% 9.72M 0s
+[2024-04-02T22:45:17.945+0000] {subprocess.py:93} INFO -    600K .......... .......... .......... .......... .......... 38% 6.05M 0s
+[2024-04-02T22:45:17.954+0000] {subprocess.py:93} INFO -    650K .......... .......... .......... .......... .......... 40% 5.47M 0s
+[2024-04-02T22:45:17.963+0000] {subprocess.py:93} INFO -    700K .......... .......... .......... .......... .......... 43% 5.25M 0s
+[2024-04-02T22:45:17.980+0000] {subprocess.py:93} INFO -    750K .......... .......... .......... .......... .......... 46% 3.38M 0s
+[2024-04-02T22:45:17.992+0000] {subprocess.py:93} INFO -    800K .......... .......... .......... .......... .......... 49% 3.28M 0s
+[2024-04-02T22:45:17.998+0000] {subprocess.py:93} INFO -    850K .......... .......... .......... .......... .......... 52% 9.95M 0s
+[2024-04-02T22:45:18.006+0000] {subprocess.py:93} INFO -    900K .......... .......... .......... .......... .......... 55% 5.53M 0s
+[2024-04-02T22:45:18.012+0000] {subprocess.py:93} INFO -    950K .......... .......... .......... .......... .......... 58% 9.34M 0s
+[2024-04-02T22:45:18.028+0000] {subprocess.py:93} INFO -   1000K .......... .......... .......... .......... .......... 61% 2.90M 0s
+[2024-04-02T22:45:18.043+0000] {subprocess.py:93} INFO -   1050K .......... .......... .......... .......... .......... 64% 3.74M 0s
+[2024-04-02T22:45:18.048+0000] {subprocess.py:93} INFO -   1100K .......... .......... .......... .......... .......... 67% 7.58M 0s
+[2024-04-02T22:45:18.054+0000] {subprocess.py:93} INFO -   1150K .......... .......... .......... .......... .......... 70% 8.04M 0s
+[2024-04-02T22:45:18.059+0000] {subprocess.py:93} INFO -   1200K .......... .......... .......... .......... .......... 73% 9.20M 0s
+[2024-04-02T22:45:18.094+0000] {subprocess.py:93} INFO -   1250K .......... .......... .......... .......... .......... 76% 1.39M 0s
+[2024-04-02T22:45:18.095+0000] {subprocess.py:93} INFO -   1300K .......... .......... .......... .......... .......... 78% 77.1M 0s
+[2024-04-02T22:45:18.095+0000] {subprocess.py:93} INFO -   1350K .......... .......... .......... .......... .......... 81%  142M 0s
+[2024-04-02T22:45:18.095+0000] {subprocess.py:93} INFO -   1400K .......... .......... .......... .......... .......... 84%  153M 0s
+[2024-04-02T22:45:18.095+0000] {subprocess.py:93} INFO -   1450K .......... .......... .......... .......... .......... 87%  337M 0s
+[2024-04-02T22:45:18.096+0000] {subprocess.py:93} INFO -   1500K .......... .......... .......... .......... .......... 90%  311M 0s
+[2024-04-02T22:45:18.144+0000] {subprocess.py:93} INFO -   1550K .......... .......... .......... .......... .......... 93% 1.01M 0s
+[2024-04-02T22:45:18.146+0000] {subprocess.py:93} INFO -   1600K .......... .......... .......... .......... .......... 96% 25.1M 0s
+[2024-04-02T22:45:18.148+0000] {subprocess.py:93} INFO -   1650K .......... .......... .......... .......... .......... 99% 19.4M 0s
+[2024-04-02T22:45:18.149+0000] {subprocess.py:93} INFO -   1700K .........                                             100%  102M=0.3s
+[2024-04-02T22:45:18.149+0000] {subprocess.py:93} INFO - 
+[2024-04-02T22:45:18.150+0000] {subprocess.py:93} INFO - 2024-04-02 22:45:18 (4.94 MB/s) - ‘/opt/***/data/data.csv’ saved [1750355/1750355]
+[2024-04-02T22:45:18.150+0000] {subprocess.py:93} INFO - 
+[2024-04-02T22:45:18.150+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-04-02T22:45:18.179+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=food_pipeline_dag_v03.1, task_id=download_data, execution_date=20240402T224516, start_date=20240402T224517, end_date=20240402T224518
+[2024-04-02T22:45:18.205+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-02T22:45:18.227+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
