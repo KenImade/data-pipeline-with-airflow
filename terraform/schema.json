@@ -35,287 +35,12 @@
       "mode": "NULLABLE"
     },
     {
-      "name": "Part_A__Section_0__General_activity_establishment",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_I__Meat_of_domestic_ungulates",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_II__Meat_from_poultry_and_lagomorphs",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_III__Meat_of_farmed_game",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_IV__Wild_game_meat",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_V__Minced_meat__meat_preparations_and_mechanically_separated_meat",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_VI__Meat_products",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_VII__Live_bivalve_molluscs",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_VIII__Fishery_products",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_IX__Raw_milk_and_dairy_products",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_X__Eggs_and_egg_products",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_XI__Frog_s_legs_and_snails",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_XII__Rendered_animal_fats_and_greaves",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_XIII__Treated_stomachs__bladders_and_intestines",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_XIV__Gelatine",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_XV__Collagen",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__Section_XVI__Highly_Refined_Product",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_B__Section_I__Sprouts",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_A__All_sections_",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Part_B__All_sections_",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
       "name": "Species",
       "type": "STRING",
       "mode": "NULLABLE"
     },
     {
       "name": "Remarks",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "TSE_Feed_ban_registrations_authorisations",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Poultry",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Bovine",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Caprine",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Lagomorphs",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Ovine",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Porcine",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Solipeds",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Ratite",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Wild_Birds",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Wild_Lagomorphs",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Wild_Ungulates",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Wild_Land_mammals_other_than_Wild_Ungulates_and_Wild_Lagomorphs",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Auction_Hall",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Collection_Centre",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Cutting_Plant",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Cold_Store",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Dispatch_Centre",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Packing_Centre",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Fresh_Fishery_Products_Plant",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Factory_Vessel",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Game_Handling_Establishment",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Liquid_Egg_Plant",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Mince_Meat_Establishment",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Meat_Preparation_Establishment",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Mechanically_Separated_Meat_Establishment",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Purification_Centre",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Producing_plant",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Processing_Plant",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "reefer_vessel",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Re_Wrappingand_repackaging_establishment",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Slaughterhouse",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Tannery",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Wholesale_Market",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-      "name": "Freezer_Vessel",
       "type": "STRING",
       "mode": "NULLABLE"
     },
@@ -331,12 +56,12 @@
     },
     {
       "name": "X",
-      "type": "STRING",
+      "type": "FLOAT",
       "mode": "NULLABLE"
     },
     {
       "name": "Y",
-      "type": "STRING",
+      "type": "FLOAT",
       "mode": "NULLABLE"
     },
     {
@@ -344,5 +69,4 @@
       "type": "STRING",
       "mode": "NULLABLE"
     }
-  ]
-  
+]
