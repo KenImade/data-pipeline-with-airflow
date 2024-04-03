@@ -34,7 +34,7 @@ cd terraform
 ```
 mkdir keys
 ```
-4. Place the Google Account Service key json file into the keys directory.
+4. Place the Google Service Account key json file into the keys directory.
 ```
 keys/my-creds.json
 ```
