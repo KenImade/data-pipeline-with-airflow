@@ -2,7 +2,7 @@
 
 The aim of this project was to learn how to build a data pipeline using Airflow for workflow orchestration and Terraform to set up the infrastructure.
 
-!['Data Pipeline']('data_pipeline.png' "Data Pipeline")
+![Data Pipeline](data_pipeline.png "Data Pipeline")
 
 ## Project Structure
 ```
